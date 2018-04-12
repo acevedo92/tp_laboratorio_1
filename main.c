@@ -11,14 +11,14 @@ int main()
 
     while(seguir=='s')
     {
-        printf("1- Ingresar Primer operando (A=%d)\n",a);
-        printf("2- Ingresar Segundo operando (B=%d)\n",b);
+        printf("1- Ingresar el primer operando (A=%d)\n",a);
+        printf("2- Ingresar el segundo operando (B=%d)\n",b);
         printf("3- Calcular la suma (A+B)\n");
         printf("4- Calcular la resta (A-B)\n");
         printf("5- Calcular la division (A/B)\n");
         printf("6- Calcular la multiplicacion (A*B)\n");
         printf("7- Calcular el factorial (A!)\n");
-        printf("8- Calcular todas las operacione\n");
+        printf("8- Calcular todas las operaciones\n");
         printf("9- Salir\n");
 
         scanf("%d",&opcion);
