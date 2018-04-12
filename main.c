@@ -5,9 +5,9 @@
 int main()
 {
     char seguir='s';
-    int opcion=0,a=0,b=0;
+    int opcion=0,a=0,b=0,sum,res,prod;
     float div;
-    long long int fact,sum,res,prod;
+    long long int fact;
 
     while(seguir=='s')
     {
