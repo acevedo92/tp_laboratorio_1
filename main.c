@@ -5,7 +5,7 @@
 int main()
 {
     char seguir='s';
-    int opcion=0,a=0,b=0,sum,res,prod;
+    int opcion=0,a=0,b=0,sum,res,prod,esNumero;
     float div;
     long long int fact;
 
