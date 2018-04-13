@@ -57,7 +57,13 @@ int main()
                 while(b==0) //valida que no sea una division por 0
                 {
                     printf("Imposible dividir por 0, ingrese nuevamente el 2do operando: ");
-                    scanf("%d",&b);
+                    esNumero=scanf("%d",&b);
+                    while (esNumero==0) //valida que sea un numero y no un caracter
+                    {
+                        printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                        setbuf(stdin,NULL);
+                        esNumero=scanf("%d",&b);
+                    }
                 }
                 div=division(a,b);
                 printf("La division es: %.2f\n",div);
@@ -70,12 +76,41 @@ int main()
                 while(a<=0) //valida que no sea un numero negativo
                 {
                     printf("imposible realizar la operacion, ingrese un numero mayor a 0: ");
-                    scanf("%d",&a);
+                    esNumero=scanf("%d",&a);
+                    while (esNumero==0) //valida que sea un numero y no un caracter
+                    {
+                        printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                        setbuf(stdin,NULL);
+                        esNumero=scanf("%d",&a);
+                    }
                 }
                 fact=factorial(a);
                 printf("El factorial de %d es: %lli\n",a,fact);
                 break;
             case 8:
+                while(b==0) //valida que no sea una division por 0
+                {
+                    printf("Imposible dividir por 0, ingrese nuevamente el 2do operando: ");
+                    esNumero=scanf("%d",&b);
+                    while (esNumero==0) //valida que sea un numero y no un caracter
+                    {
+                        printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                        setbuf(stdin,NULL);
+                        esNumero=scanf("%d",&b);
+                    }
+                }
+
+                while(a<=0) //valida que no sea un numero negativo
+                {
+                    printf("imposible realizar la operacion, ingrese un numero mayor a 0: ");
+                    esNumero=scanf("%d",&a);
+                    while (esNumero==0) //valida que sea un numero y no un caracter
+                    {
+                        printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                        setbuf(stdin,NULL);
+                        esNumero=scanf("%d",&a);
+                    }
+                }
                 sum=suma(a,b);
                 res=resta(a,b);
                 div=division(a,b);
