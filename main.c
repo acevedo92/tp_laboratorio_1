@@ -27,11 +27,23 @@ int main()
         {
             case 1:
                 printf("Primer operando: ");
-                scanf("%d",&a);
+                esNumero=scanf("%d",&a);
+                while (esNumero==0) //valida que sea un numero y no un caracter
+                {
+                printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                setbuf(stdin,NULL);
+                esNumero=scanf("%d",&a);
+                }
                 break;
             case 2:
                 printf("Segundo operando: ");
-                scanf("%d",&b);
+                esNumero=scanf("%d",&b);
+                while (esNumero==0) //valida que sea un numero y no un caracter
+                {
+                printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                setbuf(stdin,NULL);
+                esNumero=scanf("%d",&b);
+                }
                 break;
             case 3:
                 sum=suma(a,b);
@@ -42,7 +54,7 @@ int main()
                 printf("La resta es: %d\n",res);
                 break;
             case 5:
-                while(b==0)
+                while(b==0) //valida que no sea una division por 0
                 {
                     printf("Imposible dividir por 0, ingrese nuevamente el 2do operando: ");
                     scanf("%d",&b);
@@ -55,7 +67,7 @@ int main()
                 printf("El producto es: %d\n",prod);
                 break;
             case 7:
-                while(a<=0)
+                while(a<=0) //valida que no sea un numero negativo
                 {
                     printf("imposible realizar la operacion, ingrese un numero mayor a 0: ");
                     scanf("%d",&a);
