@@ -30,9 +30,9 @@ int main()
                 esNumero=scanf("%d",&a);
                 while (esNumero==0) //valida que sea un numero y no un caracter
                 {
-                printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
-                setbuf(stdin,NULL);
-                esNumero=scanf("%d",&a);
+                    printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                    setbuf(stdin,NULL);
+                    esNumero=scanf("%d",&a);
                 }
                 break;
             case 2:
@@ -40,9 +40,9 @@ int main()
                 esNumero=scanf("%d",&b);
                 while (esNumero==0) //valida que sea un numero y no un caracter
                 {
-                printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
-                setbuf(stdin,NULL);
-                esNumero=scanf("%d",&b);
+                    printf("Imposible realizar las operaciones con caracteres, ingrese un numero entero: ");
+                    setbuf(stdin,NULL);
+                    esNumero=scanf("%d",&b);
                 }
                 break;
             case 3:
